@@ -1,2 +1,2 @@
-# Aplicaci-n-B-sica-de-Gesti-n-de-Eventos
+# AplicacionBasicaDeGestionDeEventos
 Aplicación web para la gestión de eventos, donde los usuarios puedan crear, leer, actualizar y eliminar eventos.
