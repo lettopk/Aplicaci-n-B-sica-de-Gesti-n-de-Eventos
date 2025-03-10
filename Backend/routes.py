@@ -34,4 +34,4 @@ def delete_event(id):
     event = Event.query.get_or_404(id)
     db.session.delete(event)
     db.session.commit()
-    return jsonify({"message": "Evento eliminado"})
+    return '', 204

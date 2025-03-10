@@ -7,7 +7,7 @@ import { EventListComponent } from './components/event-list/event-list.component
   standalone: true,
   imports: [EventFormComponent, EventListComponent], 
   templateUrl: './app.component.html',
-  styleUrl: './ app.component.css'
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'gestion_eventos';
