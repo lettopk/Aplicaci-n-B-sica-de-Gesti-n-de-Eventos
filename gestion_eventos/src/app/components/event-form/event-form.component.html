@@ -1,6 +1,10 @@
 
 <div class="event-form-container">
     <h3>Agregar Evento</h3>
+        <div *ngIf="errorMessage" class="error-message">
+            {{ errorMessage }}
+        </div>
+        
         <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
             <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
 

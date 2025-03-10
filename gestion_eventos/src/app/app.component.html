@@ -2,7 +2,7 @@
 <div class="container">
   <h1>Gestión de Eventos</h1>
   <!-- Formulario para agregar eventos -->
-  <app-event-form (eventAdded)="eventList.loadEvents()"></app-event-form>
+  <app-event-form [selectedEvent]="eventList.selectedEvent" (eventUpdated)="eventList.onEventUpdated()" ></app-event-form>
   <app-event-list #eventList></app-event-list>
 </div>
 
