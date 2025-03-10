@@ -1,0 +1,26 @@
+.event-list-container {
+    max-height: 400px;
+    /* Altura máxima antes de que aparezca el scroll */
+    overflow-y: auto;
+    /* Permite desplazarse cuando hay demasiados eventos */
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+    background: #f9f9f9;
+}
+
+.event-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+}
+
+.event-form-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background: #f5f5f5;
+}

@@ -1,14 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { EventFormComponent } from './components/event-form/event-form.component'; // Asegúrate de importar el componente
+import { EventFormComponent } from './components/event-form/event-form.component'; 
+import { EventListComponent } from './components/event-list/event-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, EventFormComponent], // Agrega aquí el componente
-  templateUrl: '../app.component.html',
-  styleUrl: '../app.component.css'
+  imports: [EventFormComponent, EventListComponent], 
+  templateUrl: './app.component.html',
+  styleUrl: './ app.component.css'
 })
 export class AppComponent {
   title = 'gestion_eventos';
+
+constructor() {
+    console.log('AppComponent cargado');
+  }
 }

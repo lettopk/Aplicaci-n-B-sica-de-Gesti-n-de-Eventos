@@ -1,1 +1,22 @@
-<p>event-form works!</p>
+
+<div class="event-form-container">
+    <h3>Agregar Evento</h3>
+        <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+            <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+            <label for="title">Título:</label>
+            <input id="title" formControlName="title" required />
+
+            <label for="date">Fecha y hora:</label>
+            <input id="date" type="datetime-local" formControlName="date" required />
+
+            <label for="description">Descripción:</label>
+            <textarea id="description" formControlName="description" required></textarea>
+
+            <label for="location">Ubicación:</label>
+            <input id="location" formControlName="location" required />
+
+            <button type="submit" [disabled]="eventForm.invalid">Agregar Evento</button>
+        </form>
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+</div>

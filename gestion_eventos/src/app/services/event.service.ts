@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import axios from 'axios';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,20 +8,23 @@ import axios from 'axios';
 export class EventService {
   private baseUrl = 'http://127.0.0.1:5000/events';
 
-  async getEvents() {
-    return (await axios.get(this.baseUrl)).data;
+  constructor(private http: HttpClient) { }
+
+  getEvents(): Observable<any[]> {
+    return this.http.get<any[]>(this.baseUrl);
   }
 
-  async createEvent(event: any) {
-    return (await axios.post(this.baseUrl, event)).data;
+  createEvent(event: any): Observable<any> {
+    return this.http.post<any>(this.baseUrl, event);
   }
 
-  async updateEvent(id: number, event: any) {
-    return (await axios.put(`${this.baseUrl}/${id}`, event)).data;
+  updateEvent(id: number, event: any): Observable<any> {
+    return this.http.put<any>(`${this.baseUrl}/${id}`, event);
   }
 
-  async deleteEvent(id: number) {
-    return (await axios.delete(`${this.baseUrl}/${id}`)).data;
+  deleteEvent(id: number): Observable<any> {
+    return this.http.delete<any>(`${this.baseUrl}/${id}`);
   }
 }
+
 

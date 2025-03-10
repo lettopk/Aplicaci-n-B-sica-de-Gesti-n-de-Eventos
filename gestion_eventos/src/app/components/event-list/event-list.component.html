@@ -1,1 +1,12 @@
-<p>event-list works!</p>
+
+<div class="event-list-container">
+    <ul>
+        <li *ngFor="let event of events">
+          <h3>{{ event.title }}</h3>
+           <p>{{ event.date }}</p>
+            <p>{{ event.description }}</p>
+          <p>{{ event.location }}</p>
+          <button (click)="deleteEvent(event.id)">Eliminar</button>
+      </li>
+    </ul>
+</div>
