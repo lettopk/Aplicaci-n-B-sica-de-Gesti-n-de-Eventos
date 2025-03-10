@@ -23,19 +23,19 @@ gestion_eventos/
 
 Instalación y ejecución
  Backend (Flask)
-    Instalar dependencias, en la terminal de la ubicaicon del proyecto ejecutar:
+    Instalar dependencias, en la terminal de la ubicaicon del proyecto ejecutar(/AplicacionBasicaDeGestionDeEventos):
       cd backend
       pip install -r requirements.txt
 
-  luego Ejecutar el servidor Flask en la terminal de la ubicaicon del proyecto (/backend):
+  luego Ejecutar el servidor Flask en la terminal de la ubicaicon del proyecto (/AplicacionBasicaDeGestionDeEventos/backend):
       python app.py
 
  Frontend (Angular)
-    Instalar dependencias, en la terminal de la ubicaicon del proyecto ejecutar:
+    Instalar dependencias, en la terminal de la ubicaicon del proyecto ejecutar(/AplicacionBasicaDeGestionDeEventos):
       cd gestion_eventos
       npm install
 
-  Ejecutar la aplicación Angular,  en la terminal de la ubicaicon del proyecto (/gestion_eventos):
+  Ejecutar la aplicación Angular,  en la terminal de la ubicaicon del proyecto (/AplicacionBasicaDeGestionDeEventos/gestion_eventos):
       ng serve
 
 Acceder en el navegador:
