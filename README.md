@@ -8,6 +8,21 @@ Tecnologías utilizadas
 
 Estructura del proyecto
 
+gestion_eventos/
+│── frontend/            # Aplicación Angular
+│   ├── src/
+│   ├── package.json
+│   ├── angular.json
+│── backend/             # API con Flask
+│   ├── app.py
+│   ├── database.py
+│   ├── models.py
+│   ├── routes.py
+│   ├── test_app.py      # Pruebas unitarias
+│── README.md            # Documentación
+
+
+
 backend/             # API con Flask
 │   ├── app.py
 │   ├── database.db
